@@ -8,7 +8,7 @@ function Header({onClickOpenAdd}) {
 
     return (
         <header>
-            <a href="/" className={styles.headerLogo}>
+            <a href="/React-Note" className={styles.headerLogo}>
                 <img className={styles.headerLogoImg} height={50} width={50} src={logo} alt="Logo"/>
                 <div>
                     <h2>React Note</h2>
