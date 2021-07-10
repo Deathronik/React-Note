@@ -126,7 +126,7 @@ function App() {
                         }
                     </h2>
                     <div className="searchBlock">
-                        <img height={14} width={14} src="/img/search.png" alt="Search"/>
+                        <img height={14} width={14} src="./img/search.png" alt="Search"/>
                         <input maxLength={35} value={searchData} onChange={event => searchInputHandler(event)}
                                type="text"
                                placeholder="Search notes..."/>
