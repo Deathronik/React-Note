@@ -8,13 +8,13 @@ function Header({onClickOpenAdd}) {
 
     return (
         <header>
-            <div className={styles.headerLogo}>
+            <a href="/" className={styles.headerLogo}>
                 <img className={styles.headerLogoImg} height={50} width={50} src={logo} alt="Logo"/>
                 <div>
                     <h2>React Note</h2>
                     <p>&nbsp;Best note service</p>
                 </div>
-            </div>
+            </a>
             <button onClick={onClickAdd}>
                 ADD NEW NOTE +
             </button>

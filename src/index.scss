@@ -58,9 +58,10 @@ body {
       color: #ED5151;
     }
     .searchBlock {
+      position: relative;
       display: flex;
       flex-direction: row;
-      width: 213px;
+      width: 230px;
       height: 46px;
 
       background: #FFFFFF;
@@ -79,6 +80,31 @@ body {
 
       input::placeholder {
         color: rgba(237, 81, 81, 0.65);
+      }
+
+      svg {
+
+        position: absolute;
+        cursor: pointer;
+        right: 10px;
+        top: 10px;
+
+        &:hover {
+          rect {
+            animation: fill 10s, popup 11s;
+            fill: #E67F7F;
+          }
+          path {
+            fill: white;
+          }
+        }
+
+        &:active {
+          rect {
+            fill: darken(#E67F7F, 10%);
+            stroke: darken(#E67F7F, 10%);
+          }
+        }
       }
     }
   }
