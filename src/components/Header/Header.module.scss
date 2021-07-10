@@ -1,0 +1,35 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 90px;
+  padding: 20px 35px;
+  border-bottom: 1px solid rgba(235, 122, 122, 0.26);
+
+  h2 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 45px;
+    color: #ED5151;
+    margin: -5px 0;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 17px;
+    color: #EB7A7A;
+    margin: 0;
+  }
+
+  .headerLogo {
+    display: flex;
+    flex-direction: row;
+    height: 55px;
+    overflow: hidden;
+  }
+
+
+  .headerLogoImg {
+    margin-right: 10px;
+  }
+}

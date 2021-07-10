@@ -1,0 +1,71 @@
+.note {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 235px;
+  height: 220px;
+  margin-right: 70px;
+  margin-bottom: 40px;
+
+  background: #FFFFFF;
+  border: 1px solid #ED5151;
+  box-sizing: border-box;
+  border-radius: 27px;
+  cursor: pointer;
+
+  transition: 0.2s ease-in-out;
+
+  .noteTitle {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 13px;
+    padding: 0 30px;
+    font-size: 18px;
+    line-height: 22px;
+    color: #ED5151;
+    text-align: center ;
+
+    height: 33px;
+    border-bottom: 1px solid rgba(235, 122, 122, 0.5);
+
+    .drop {
+      position: fixed;
+      cursor: help;
+      right: 20px;
+    }
+  }
+
+  .noteContent {
+    overflow-wrap: break-word;
+    flex: 1;
+    padding: 12px 14px;
+    height: 130px;
+    font-size: 14px;
+    line-height: 17px;
+    color: #ED5151;
+    display: -webkit-box;
+    -webkit-line-clamp: 7;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
+    border-bottom: 1px solid rgba(235, 122, 122, 0.5);
+  }
+
+  .noteDate {
+    height: 22px;
+    margin-bottom: 14px;
+    margin-top: 6px;
+
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+    color: #E67F7F;
+  }
+
+  &:hover {
+    filter: drop-shadow(0px 6px 10px rgba(0, 0, 0, 0.25));
+    transform: translateY(-5px);
+  }
+}
