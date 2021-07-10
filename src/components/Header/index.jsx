@@ -1,4 +1,5 @@
 import styles from './Header.module.scss'
+import logo from '../../img/logo.png'
 
 function Header({onClickOpenAdd}) {
     const onClickAdd = () => {
@@ -8,7 +9,7 @@ function Header({onClickOpenAdd}) {
     return (
         <header>
             <div className={styles.headerLogo}>
-                <img className={styles.headerLogoImg} height={50} width={50} src="../../img/logo.png" alt="Logo"/>
+                <img className={styles.headerLogoImg} height={50} width={50} src={logo} alt="Logo"/>
                 <div>
                     <h2>React Note</h2>
                     <p>&nbsp;Best note service</p>

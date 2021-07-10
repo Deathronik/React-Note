@@ -3,6 +3,7 @@ import uuid from 'react-uuid'
 import moment from "moment";
 
 import styles from './Modal.module.scss'
+import trashIcon from '../../img/trash.svg'
 
 function Modal({onClose, onAddHandler, onUpdateHandler, onDelHandler, modalObj}) {
     const [isNewNoteObjTitle, setNewNoteObjTitle] = React.useState(modalObj.isNewNote ? '' : modalObj.title)
@@ -57,7 +58,7 @@ function Modal({onClose, onAddHandler, onUpdateHandler, onDelHandler, modalObj})
                     <button onClick={modalObj.isNewNote ? onAdd : onUpdate}>
                         {modalObj.isNewNote ? "ADD NEW NOTE +" : "UPDATE NOTE"}
                     </button>
-                    {!modalObj.isNewNote && <img onClick={onDel} height={40} width={40} src="/img/trash.svg" alt="Trash"/>}
+                    {!modalObj.isNewNote && <img onClick={onDel} height={40} width={40} src={trashIcon} alt="Trash"/>}
                 </div>
             </div>
         </div>
